@@ -1,9 +1,9 @@
- let numberofDrumButtons = document.querySelectorAll(".drum").length;
+ var numberofDrumButtons = document.querySelectorAll(".drum").length;
 
 
  for (let i = 0; i < numberofDrumButtons; i++) { document.querySelectorAll(".drum")[i].addEventListener("click", () => {
       
-     let buttonInnerHTML = this.innerHTML;
+     var buttonInnerHTML = this.innerHTML;
     switch (buttonInnerHTML) {
       case "w":
         var audio = new Audio("crash.mp3");
